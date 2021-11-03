@@ -63,7 +63,7 @@ export default function MovieModal(props: MovieModalProps) {
         <div className="relative px-8 z-20">
           <div className="flex items-center justify-between">
             <h1 className="text-7xl">{movieData.title}</h1>
-            <StarRating currentRating={movieData.vote_average / 2} />
+            <StarRating currentRating={Math.ceil(movieData.vote_average / 2)} />
           </div>
           <div className="mb-8" />
           <p className="text-xl leading-relaxed">{movieData.overview}</p>
