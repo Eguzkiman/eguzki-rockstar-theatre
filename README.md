@@ -1,4 +1,13 @@
-# Getting Started with Create React App
+# Eguzki rockstar challenge 🤘
+### Is this live?
+Yes! [right here](https://eguzki-rockstar-challenge.netlify.app/)
+
+### How do I run this locally
+1. Get your API key from themoviedb, and set it as an environment variable `REACT_APP_MOVIE_DB_API_KEY`
+2. `yarn`
+3. `yarn start`
+
+# Create React App default readme below
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
