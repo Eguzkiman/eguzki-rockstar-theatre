@@ -40,12 +40,8 @@ function App() {
     }
 
     return data.results.filter((movie) => {
-      const lowerThreshold = (selectedStarRating - 1) * 2;
-      const higherThreshold = selectedStarRating * 2;
-      return (
-        movie.vote_average > lowerThreshold &&
-        movie.vote_average <= higherThreshold
-      );
+      return selectedStarRating === Math.ceil(movie.vote_average / 2)
+
     });
   }, [discoverQuery.data, selectedStarRating]);
 
